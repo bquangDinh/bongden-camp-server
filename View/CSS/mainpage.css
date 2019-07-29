@@ -1,0 +1,164 @@
+/*CUSTOM FONT*/
+@font-face{
+	font-family: MyriadPro;
+	src: url("../Asset/Font/MyriadPro-Regular.otf");
+}
+
+@font-face{
+	font-family: Roboto-Light;
+	src: url("../Asset/Font/Roboto-Thin.ttf");
+}
+
+@font-face{
+	font-family: Roboto-Thin;
+	src: url("../Asset/Font/Roboto-Light.ttf");
+}
+
+@font-face{
+	font-family: Roboto-Medium;
+	src: url("../Asset/Font/Roboto-Medium.ttf");
+}
+
+body,html{
+  overflow: hidden;
+}
+
+button{
+	cursor: pointer;
+  border: 0;
+}
+
+button:focus{
+	outline: 0;
+}
+
+/*EFFECTS*/
+.shadow-hover{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.shadow-hover:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+#control-bar{
+  width: 100%;
+  height: 30px;
+  background: #f39c12;
+}
+
+#connecting-bar{
+  width: 100%;
+  height: 50px;
+  background: white;
+}
+
+#users-container{
+  height: 570px;
+  background: #ecf0f1;
+}
+
+.user-container{
+  height: 250px;
+  background: white;
+  border-radius: 5px;
+}
+
+.user-container .user-name{
+  font-family: MyriadPro;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.score-value{
+  font-size: 3em;
+  font-family: MyriadPro;
+  font-weight: bold;
+}
+
+.user-text-container{
+  height: 80px;
+  border-radius: 8px;
+  border-style: dashed;
+  border-color: #e3e3e3;
+}
+
+.user-text-container .user-text-inner{
+  height: 75%;
+  width: 92%;
+  font-family: MyriadPro;
+  font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	text-overflow: ellipsis;
+}
+
+.host-input .host-input-txt{
+  width: 80%;
+  background-color: transparent;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  font-family: MyriadPro;
+  font-weight: bold;
+}
+
+.score-btn{
+  cursor: pointer;
+  color: #333333;
+}
+
+.score-btn:hover{
+  color: #3498db;
+}
+
+.host-input .host-input-txt:focus{
+  outline: 0;
+}
+
+.host-input .send-text-btn{
+  background-color: transparent;
+  font-size: 1.2em;
+  color: #333333;
+  transition: color .3s;
+}
+
+.host-input .send-text-btn:hover{
+  color: #3498db;
+}
+
+.status-icon,.server-status{
+  color: #333333;
+}
+
+.status-icon.online,.server-status.online{
+  color: #2ecc71;
+}
+
+.server-control-btn{
+	font-size: 1.5em;
+  background: transparent;
+	color: #3498db;
+}
+
+#status{
+  font-family: MyriadPro;
+  font-weight: bold;
+}
+
+.waiting-container{
+  height: 250px;
+  border-radius: 5px;
+  border-style: dashed;
+  font-size: 4em;
+  color: lightgray;
+}
+
+#movebar{
+	-webkit-app-region:drag;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+	height: 30px;
+}
