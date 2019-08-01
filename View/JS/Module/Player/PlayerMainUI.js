@@ -123,6 +123,10 @@ module.exports = class PlayerMainUI{
 
         case that.player.PROPERTIES_NAME.MESS:
           that.mess_box.innerHTML = value;
+          $(that.player_background).css("background","#e74c3c");
+          setTimeout(function(){
+            $(that.player_background).css("background","white");
+          },1500);
           break;
 
         case that.player.PROPERTIES_NAME.SCORE:
